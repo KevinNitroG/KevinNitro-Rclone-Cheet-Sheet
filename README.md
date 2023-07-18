@@ -1,10 +1,12 @@
-# KEVIN NITRO RCLONE CHEAT SHEET
+# README
+
+## KEVIN NITRO RCLONE CHEAT SHEET
 
 These are my personal rclone tips, commands,... not a document for rclone or sth 😪
 
-# RCLONE COMMANDS
+## RCLONE COMMANDS
 
-## ARG
+### ARG
 
 ```
 --transfers 8
@@ -14,7 +16,7 @@ These are my personal rclone tips, commands,... not a document for rclone or sth
 -v
 ```
 
-## COPY, MOVE, SYNC
+### COPY, MOVE, SYNC
 
 ```
 rclone copy "Source" "Destination"
@@ -22,6 +24,6 @@ rclone copy "Source" "Destination"
 
 so on with move, sync
 
-## MOUNT
+### MOUNT
 
-### RCLONE MOUNT FOR WINDOWS: [Read here](Rclone%20Mount%20for%20Windows.md) 🤗
+#### RCLONE MOUNT FOR WINDOWS: [Read here](rclone-mount-for-windows.md) 🤗
