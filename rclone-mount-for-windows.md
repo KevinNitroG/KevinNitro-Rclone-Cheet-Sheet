@@ -1,10 +1,12 @@
 ---
 description: Guide for Mounting Remotes using Rclone for Windows
+cover: .gitbook/assets/wallpaperflare.com_wallpaper.jpg
+coverY: 0
 ---
 
 # Rclone mount Windows
 
-This is my trick to use rclone mount command. If it isn't efficient and you have another easier way, just feel free to create an issue or create a pull request 🥰
+This is my trick to use rclone mount command. If it isn't efficient and you have another efficent, easy way, feel free to create an issue or create a pull request 🥰
 
 ***
 
@@ -20,11 +22,8 @@ This is my trick to use rclone mount command. If it isn't efficient and you have
 
 1. Go to [SilentCMD repo](https://github.com/stbrenner/SilentCMD)
 2. **Download** from [Release page](https://github.com/stbrenner/SilentCMD/releases/latest), **extract** and **put** it in a folder
-3.  **Set environment** **path** for SilentCMD folder
 
-    > Or you can put SilentCMD in the same Directory of Rclone
-
-### SET ENV FOR RCLONE
+### SET ENV FOR RCLONE & SILENT CMD
 
 You should also **set** **environment** **path** for Rclone to make it easier to use 😪
 
@@ -61,14 +60,14 @@ You should also **set** **environment** **path** for Rclone to make it easier to
 
     > Ex of my rclone mount script:
 
-    <pre class="language-powershell" data-overflow="wrap"><code class="lang-powershell"><strong>rclone mount CombineNeccessary: Z: --cache-dir "D:\Program Files\Rclone Cache" --vfs-cache-mode full --network-mode --volname "Cloud Storages" --no-modtime --no-checksum --buffer-size=512M --vfs-cache-max-age 72h
+    <pre class="language-batch" data-overflow="wrap"><code class="lang-batch"><strong>rclone mount CombineNeccessary: Z: --cache-dir "D:\Program Files\Rclone Cache" --vfs-cache-mode full --network-mode --volname "Cloud Storages" --no-modtime --no-checksum --buffer-size=512M --vfs-cache-max-age 72h
     </strong></code></pre>
 
-    See more about rclone command to use it as your demmand 😪
+    See more about rclone command to use it as your demand 😪
 4. Copy the **full path** of the script above for the below step
 
 {% hint style="warning" %}
-In step 3, if you don't set env for **SilentCMD** & **Rclone,** you will have to replace the full path of .**exe** file of those programs
+In step 3, if you don't set env for **SilentCMD** & **Rclone,** you will have to replace the full path of the .**exe** file of those programs
 {% endhint %}
 
 <details>
@@ -87,9 +86,13 @@ With **SilentCMD**, **Rclone** doesn't run under any terminal, cmd,... So after 
 
 ## 4️⃣ SET UP RUNNING MOUNT SCRIPT 🏃‍♂️
 
-1. Right-click anywhere to open Context Menu --> **New** --> **Shortcut**
+1. Right-click anywhere to open **Context Menu** --> **New** --> **Shortcut**
 2. **Type the location of the item:** `SilentCMD "the_full_path_of_batch_script"` --> Next
 3. **Type a name for this shortcut:** Anything you want _(Ex: Rclone mount)_
+
+{% hint style="warning" %}
+In step 2, if you don't set env for **SilentCMD**, you have to enter the full path of **.exe** of **SilentCMD**
+{% endhint %}
 
 ### Addition:
 
@@ -97,7 +100,7 @@ With **SilentCMD**, **Rclone** doesn't run under any terminal, cmd,... So after 
 
 1. Open its **properties** _(<mark style="color:purple;">`Alt + Enter`</mark>)_
 2. **Click on** `Change icon...`: Browse to the icon file\
-   You can use rclone.exe's icon
+   You can use **rclone.exe**'s icon
 
 ***
 
@@ -111,3 +114,10 @@ With **SilentCMD**, **Rclone** doesn't run under any terminal, cmd,... So after 
 ### More controlable way:
 
 Use task schedule which I'm not good at using it 🥴
+
+## 6️⃣ MAKE THE SHORTCUT BE VISIBLE IN PROGRAM LIST + START MENU
+
+1. <mark style="color:purple;">Windows + R</mark>: `shell:Common Programs`
+2. **Copy** & **Paste** the shortcut you created from the previous step
+
+And now you can search for the shortcut in search bar 🔎
